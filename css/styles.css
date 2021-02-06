@@ -13,6 +13,7 @@
   --section-padding: 94px;
   --button-background-color-active: #188ce8;
   --collum-number: 3;
+  --animation-function-and-duration: 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   color: var(--text-color);
@@ -110,6 +111,7 @@ p {
   position: relative;
   color: var(--text-color-title);
   padding: 32px 0;
+  transition: color var(--animation-function-and-duration);
 }
 .address-list {
   margin-left: auto;
@@ -123,6 +125,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color var(--animation-function-and-duration);
 }
 .address-link-icon {
   margin-right: 10px;
@@ -198,6 +201,7 @@ p {
 
   padding: 10px 32px;
   border: none;
+  transition: background-color var(--animation-function-and-duration);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -243,9 +247,29 @@ p {
 .doing.section {
   padding-top: 0;
 }
-
+.doing-list-item {
+  position: relative;
+}
 .doing-list-item:not(:last-child) {
   margin-right: var(--double-gatter-size);
+}
+.doing-list-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  font-weight: 700;
+
+  line-height: 1.142;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  /* height: 70px; */
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 82px;
 }
 /* == Our team section styles == */
 
