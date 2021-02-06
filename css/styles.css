@@ -147,7 +147,7 @@ p {
   background-color: var(--active-link-color);
   width: 100%;
   border-radius: 2px;
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
 .address-link-icon {
   fill: currentColor;
