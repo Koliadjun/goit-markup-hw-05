@@ -250,14 +250,14 @@ p {
 }
 .doing-list-item {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 .doing-list-item:not(:last-child) {
   margin-right: var(--double-gatter-size);
 }
 .doing-list-text {
   position: absolute;
-  bottom: 0;
-  left: 0;
 
   font-weight: 700;
   line-height: 1.142;
