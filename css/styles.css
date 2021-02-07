@@ -441,7 +441,8 @@ p {
   border: none;
   cursor: pointer;
   transition: color var(--animation-function-and-duration),
-    background-color var(--animation-function-and-duration);
+    background-color var(--animation-function-and-duration),
+    box-shadow var(--animation-function-and-duration);
 }
 .examples-filter-button:hover,
 .examples-filter-button:focus,
