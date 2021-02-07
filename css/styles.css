@@ -538,7 +538,8 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: transform var(--animation-function-and-duration),
-    opacyty var(--animation-function-and-duration);
+    opacity var(--animation-function-and-duration),
+    visibility var(--animation-function-and-duration);
   transform: translateY(0);
 }
 .modal {
@@ -570,9 +571,9 @@ p {
 }
 
 .is-hidden {
-  /* visibility: hidden;
+  visibility: hidden;
   opacity: 0;
-  pointer-events: none; */
+  pointer-events: none;
 
   transform: translateY(-100%);
 }
